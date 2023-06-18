@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+    body {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        background-color: rgba(17, 41, 103, 0.1);
+    }
+
+    .head_text {
+        color: #486bbb;
+    }
+
+    .card {
+        box-shadow: 0 16px 48px #0ad01a;
+    }
+</style>
+
+<header class="masthead">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-8 col-md-10 mx-auto">
+                <div class="site-heading">
+                    <h3 class=" site-heading my-4 mt-3 text-white"> Добро пожаловать етп</h3>
+                    <p class="text-light">Спасибо Духу и Кастанеде!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <p>"Этот блог создан воином из группировки 'Место силы!' c целью сбора информации и ведения отчета о своей практике."!</p>
+    <p>Что еще могу сказать, буду переодически записывать практики своих друзей и свои. Также в планах прикрутить библоитеку сюда.</p>
+        {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+    </div>
+</div>
+{%endblock%}
